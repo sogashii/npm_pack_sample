@@ -1,0 +1,42 @@
+{
+  "name": "@sample/core",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "src/index.ts",
+    "src/components/*",
+    "src/types/*",
+    "lib/*"
+  ],
+  "types": "./lib/index.d.ts",
+  "main": "./dist/sample-core.umd.cjs",
+  "module": "./dist/sample-core.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sample-core.js",
+      "require": "./dist/sample-core.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "tsc": "vue-tsc",
+    "vitebuild": "vite build"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "sass": "^1.62.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vue-tsc": "^1.4.2"
+  }
+}
