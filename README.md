@@ -8,22 +8,22 @@
 
 - パッケージのインストール
 
-```shell
-yarn install
-```
+  ```shell
+  yarn install
+  ```
 
 - 起動（`core`単体で起動したい場合）
 
-```shell
-yarn dev
-```
+  ```shell
+  yarn dev
+  ```
 
 - パッケージ化
 
-```shell
-yarn build
-yarn pack
-```
+  ```shell
+  yarn build
+  yarn pack
+  ```
 
 - `core`ディレクトリに`sample-core-v0.0.0.tgz`が作成されるので、そのファイルを`main`フォルダへ移動
 
@@ -31,24 +31,24 @@ yarn pack
 
 - パッケージのインストール
 
-```shell
-yarn install
-```
+  ```shell
+  yarn install
+  ```
 
 - `core`パッケージのインストール
 
-```shell
-yarn add ./sample-core-v0.0.0.tgz
-```
+  ```shell
+  yarn add ./sample-core-v0.0.0.tgz
+  ```
 
 - バージョンが変わらない限りキャッシュされるので、`core`を変更した場合はキャッシュ削除
 
-```shell
-yarn cache clean
-```
+  ```shell
+  yarn cache clean
+  ```
 
 - 起動
 
-```shell
-yarn dev
-```
+  ```shell
+  yarn dev
+  ```
